@@ -1,8 +1,12 @@
 import express from 'express';
 
 const app = express();
+app.use(express.json());
 
-app.get('/users', (req, res) => {
+// create feeedbacks
+app.post('/feedbacks', (req, res) => {
+  console.log(req.body);
+  
   return res.send('hello world');
 })
 
