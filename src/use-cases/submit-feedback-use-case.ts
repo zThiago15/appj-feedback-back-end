@@ -47,4 +47,4 @@ export class SubmitFeedbackUserCase {
       ].join('\n'),
     });
   }
-}
+}   
